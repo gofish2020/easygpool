@@ -21,7 +21,7 @@ type Options struct {
 	// 禁用清理
 	DisablePurge bool
 
-	// 被清理掉协程，最大空闲时长超过 MaxIdleTime 就会被清理掉
+	// 协程池中的协程如果长时间不执行任务 超过 MaxIdleTime 就会被清理掉
 	MaxIdleTime time.Duration
 
 	// NonBlocking = true非阻塞模式
